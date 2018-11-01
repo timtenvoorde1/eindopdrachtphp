@@ -23,7 +23,7 @@
 	      <div class="row">
 	        <div class="input-field col s6 offset-s9">
 	          <i class="material-icons prefix">mode_edit</i>
-	          <textarea id="textarea" name="textarea" class="materialize-textarea"></textarea>
+	          <textarea id="textarea" name="bericht" class="materialize-textarea"></textarea>
 	          <label for="icon_prefix2">Bericht</label>
 	        </div>
 	      </div>
@@ -36,7 +36,29 @@
   <?php
   	if (isset($_POST['submit']))
   	{
-  		
+  		$naam = htmlspecialchars($_POST['name']);
+  		$email = htmlspecialchars($_POST['email']);
+  		$bericht = htmlspecialchars($_POST['bericht']);
+
+  		if (empty($naam)) 
+  		{
+  			echo 'Vul uw naam in alstublieft..<br />';
+  		}
+
+  		if (empty($email))
+  		{
+  			echo 'Vul uw email is alstublieft..<br />';
+  		}
+
+  		if (empty($bericht))
+  		{
+  			echo 'Vul uw bericht is alstublieft..<br />';
+  		}
+
+  		else 
+  		{
+  			echo 'Uw bericht is verzonden!';
+  		}
   	}
   ?>
 
