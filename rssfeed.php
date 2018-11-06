@@ -20,15 +20,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<ul class="collapsible"><?php
+					<ul class="collapsible popout"><?php
 					foreach($entries as $entry){
 						?>
 							<li>
 							<div class="collapsible-header">
-								<a href="<?= $entry->link ?>">
-								<?= $entry->title ?></a>
+								<i class="material-icons">filter_drama</i>
+								<?= $entry->title ?>
 							</div>
-							<div class="collapsible-body>">
+							<div class="collapsible-body">
 								(<?= parse_url($entry->link)['host'] ?>)
 								<?= strftime('%m/%d/%Y %I:%M %p', strtotime($entry->pubDate)) ?>
 								<?= $entry->description ?>

@@ -1,6 +1,6 @@
 <?php include ('includes/header.php'); ?>
 
-<h1 class="header center text-lighten-4">Wil je mat wat vragen?</h1>
+<h1 class="header center text-lighten-4">Wil je mij wat vragen?</h1>
 	<div class="row center">
 	    <h5 class="header col s12">Doe dat via het formulier hieronder!</h5>
 	</div>
@@ -20,6 +20,56 @@
 	          <label for="email">Email</label>
 	        </div>
 	      </div>
+
+	      <div class="row">
+	      	<div class="input-field col s6 offset-s9">
+			    <select name="JaNee">
+			      <option value="ja" name="ja">Ja</option>
+			      <option value="nee" name="nee">Nee</option>
+			    </select>
+			    <label>Bent u 18 jaar of ouder?</label>
+			  </div>
+	      </div>
+	      <div class="row">
+	      	<div class="input-field col s6 offset-s9">
+	      		<p>
+			    <label>
+				    <input name="gender" value="man" type="radio" />
+				    <span>Man</span>
+				</label>
+				</p>
+				<p>
+				<label>
+				   <input name="gender" value="vrouw" type="radio" />
+				   <span>Vrouw</span>
+				</label>
+				</p>
+				<p>
+				<label>
+				   <input class="with-gap" value="anders" name="gender" type="radio" />
+				   <span>Anders</span>
+				</label>
+				</p>
+				<p>
+			      <label>
+			        <input type="checkbox" class="filled-in" value="fortnite" name="checkbox[]" />
+			        <span>Fortnite</span>
+			      </label>
+    			</p>
+    			<p>
+			      <label>
+			        <input type="checkbox" class="filled-in" value="pubg" name="checkbox[]" />
+			        <span>League of Legends</span>
+			      </label>
+    			</p>
+    			<p>
+			      <label>
+			        <input type="checkbox" class="filled-in" value="csgo" name="checkbox[]" />
+			        <span>CSGO</span>
+			      </label>
+    			</p>
+			</div>
+		  </div>
 	      <div class="row">
 	        <div class="input-field col s6 offset-s9">
 	          <i class="material-icons prefix">mode_edit</i>
@@ -39,26 +89,69 @@
   		$naam = htmlspecialchars($_POST['name']);
   		$email = htmlspecialchars($_POST['email']);
   		$bericht = htmlspecialchars($_POST['bericht']);
+  		$checkbox = $_POST['checkbox'];
+  		$gender = $_POST['gender'];
+  		$janee = $_POST['JaNee'];
+  		
+  		echo $naam . "<br />";
+  		echo $email . "<br />";
+  		echo $bericht . "<br />";
+  		echo $gender . "<br />";
+  		echo $janee . "<br />";
 
-  		if (empty($naam)) 
+  		foreach ($checkbox as $value) 
   		{
-  			echo 'Vul uw naam in alstublieft..<br />';
+  			echo $value . "<br />";
   		}
 
-  		if (empty($email))
-  		{
-  			echo 'Vul uw email is alstublieft..<br />';
-  		}
+  		// if (empty($naam)) 
+  		// {
+  		// 	echo 'Vul uw naam in alstublieft..<br />';
+  		// }
 
-  		if (empty($bericht))
-  		{
-  			echo 'Vul uw bericht is alstublieft..<br />';
-  		}
+  		// if (empty($email))
+  		// {
+  		// 	echo 'Vul uw email is alstublieft..<br />';
+  		// }
 
-  		else 
-  		{
-  			echo 'Uw bericht is verzonden!';
-  		}
+  		// if (empty($bericht))
+  		// {
+  		// 	echo 'Vul uw bericht is alstublieft..<br />';
+  		// }
+
+  		// if (empty($janee))
+  		// {
+  		// 	echo 'Klik alstublieft ja als u 18 jaar of ouder bent, of nee als u jonger dan 18 bent.';
+  		// }
+
+	   // 	if ($_POST['JaNee'] == 'ja') 
+	  	// {
+	  	// 	echo 'U bent 18 jaar en ouder.<br/>';
+	  	// }
+
+	  	// if ($_POST['JaNee'] == 'nee') 
+	  	// {
+	  	// 	echo 'U bent jonger dan 18.<br/>';
+	  	// }
+	  	// if ($_POST['gender'] == 'man')
+	  	// {
+	  	// 	echo 'U bent een man';
+	  	// }
+
+	  	// if ($_POST['gender'] == 'vrouw')
+	  	// {
+	  	// 	echo 'U bent een vrouw';
+	  	// }
+	  	
+	  	// if ($_POST['gender'] == 'anders')
+	  	// {
+	  	// 	echo 'U bent anders';
+	  	// }
+
+  		// else 
+  		// {
+  		// 	echo 'Uw bericht is verzonden!';
+  		// }
   	}
   ?>
 

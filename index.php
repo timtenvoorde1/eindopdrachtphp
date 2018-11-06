@@ -9,7 +9,7 @@
           <h5 class="header col s12">Student informatica op het NHL Stenden</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Meer over mij</a>
+          <a href="interest.php" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Meer over mij</a>
         </div>
         <br><br>
 
@@ -27,42 +27,28 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Lorem ipsum</h5>
+            <h5 class="center">Over mij</h5>
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="light">Mijn naam is Tim ten Voorde. Ik ben 20 jaar en ben geboren op 16 februari 1998. Mijn hobbies zijn gamen, fitness en ga graag samen met vrienden even een biertje drinken ergens. Ook voetbal is een grote hobby van mij maar deze sport speel ik zelf niet meer. Ik wou altijd mijn broer opvolgen die zelf proffesioneel voetballer is. Helaas is dit er niet van gekomen. </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Lorem ipsum</h5>
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center"></h5>
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="light">
+            <iframe src="https://open.spotify.com/embed/user/watersnip27/playlist/14Z0RclUYZ9ctqZ9PZxKOa" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Lorem ipsum</h5>
+            <h5 class="center">Muziek</h5>
 
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="light">Ik ben erg liefhebber van muziek. Ik luister naar bijna elk genre. Maar om één of andere rare reden ben ik zelf nooit begonnen met een instrument, ook al wil ik al heel lang graag piano kunnen spelen. Hier links zie je mijn eigen afspeellijst van spotify. Staan echt heerlijke nummertjes tussen!</p>
           </div>
         </div>
       </div>
@@ -104,5 +90,6 @@
     </div>
     <div class="parallax"><img src="images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+
 
  <?php include ('includes/footer.php'); ?>

@@ -11,13 +11,12 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+<?php include ('weather.php'); ?> 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo">Home</a>
+      <a id="logo-container" href="index.php" class="brand-logo">Tim ten Voorde</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="interest.php">My interests</a></li>
         <li><a href="rssfeed.php">RSS-Feed</a></li>
-        <li><a href="weather.php">My Weather</a></li>
         <li><a href="form.php">Form</a></li>
       </ul>
 
